@@ -4,21 +4,11 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
     
-    var formData = {
-      md: 'nXXOhVaxsPmFYqHbWwuNtvY8EvTulXmVo5rgSB6sTFM-1653440111-0-AfyogkDxWimkY4W6Zlwh3vU0R3aZ2IzDZC902T1Lr1dQ15_btcgKEDC3zh-Gs_Vt28hBh0CWHbSgoda_qexLxyOxp-U3eAKUxwDtWkE5KYGLy8ZRiDLubWC9kSZ6dxncHY-LRL_OO_0iWqJ9P1CqtWBUbOdb-a-K4KtJQwdUOzKl_JQhB9NsPfWYkKljSHLpKHMhlrWmTjjHWcnqSJCHqifmK5NeHgtIGeWnEQQ4Kj39oO0MTpUl_E2Bogr9ffwG8qjR46L0GohJLxARVLerMkL9piXDSvir7Dwmj8shODPU38N2tE5xEUbhmkNu9BKuQDiktrQ09diQWUMfkc04fzdkLmcQbsfBpYafGVxr7wM_d00mPfCXSIuO1PK2BPSkxYkpB_L3qOcI3m2Iec4U_EIzIrVTrgxbUK8oab4V9I-tOjE2lSe6eI5EPPvr1K8vsQIZf_O5OdIhZK1uYNZpVGM1xF3PO4RhIU265wBF7kWgS-7gv_tGxzQTqRjJCAio26HoIwcNdOyeZ8x1KQfTBaFismDloiLt5EwRI9CeALHioVBacnGTaIf8p2Nl2W0zoG-COviyitUZ8y2obSKpTiGyIziqAGIzQ4IfJeA6Na-LgWoi_v7XjyJhq1-TcFHbkBbWHrrPbYErrKDCzUuj8xNIYNd6hAi5aZNZH-4YRYY6zbyPGZ6ViNCvdZPqBpyp6rsrYIBKXtWccvIGv0EivLkrimhQ7tIExKQSCW6deI7_lWjn5gAft9oiyARw_nqhbgW6QHlIhz8_w_029WGVzgVIBTrQHxStIydtV-rbzW2TCxW6-7EhPLk9xHEFl-P8oO-J0cl9tyglSm2H7_wK3sv0kFkmdOKhqUGlA1gT13pm7q0eRB2RS3SEshTGy8SErn73w0CUUNwvV7j9_Op79N0',
-      r: 'U4OSEuoo.L7BXkmh3js5bSyG86YE3zbyO1WcGQ3tDB0-1653440111-0-AWKPH9M13E7v+DnkvpPeJ++Y6rqJby/LmbTWUjC0NyU8BhNamDSI+ZmCgZAQ/8gElnWo9wvyTTMLdt/KOLpVQ3B10RoxKILx2UD5qqx7hVYnRwfaO6n7KceLGcvgfFV8PIWARkJ7zgHkDd0Wboum/m6+AK6LtyateC79uEt3pGXbBu3SCq+VEIph3AHw+u3WZoXUmRxmKovEZucgpSCInlX51F0FoxyKXHCEGiK30MvnGR+WbrdUAITfBxAC+NQBm9Jx9oTL0PeWxpxILaQDydix4j6plZy6LuhQpbDUaqxfXbgFVWVXJy0XHY08A3qrXJNx259T4V3CQ664R75Ey/uyse+81uxkRZ6TLbAKrNaZLO53DAxNK7w0sKkzGAZoP9GXwJ1gutoIrI7RjAvgRX1zmJnJN5vXr0cfadJICM3dmQl35eePT4/JOe444q/M+ccusyASbW5dgbWT2Ux8BWMjDQupcR2m7YdRbvzPAgnbjj/TANNeymZEjPaAHgVhm6rVyko+KnsALL1JmewweXN4BO8zMCEqWPwoXoHT8r2gd9hGj6+2Xyjq9Z8a2oQEKrHrav1tPbX/wJ3h85fHh5wPfgEbTiC7tAysOh/ZGEPn5ym3Xc4zcDwyhHyvX1K4Te8qyoMF6g9t1BZL0Y6UfcJHjDP+Fj6p69rIIqmT/2gRV2ND4s320ifTRTjJfffmny7FLclJSoWS+nCq5W/VvDdckLhKDN7VD4prNpEfNkMD410hs0K554Uuqc/qaKYxRlAKD+uHERSp4IzsqvQRVEB8GO4Ptn4UyXA90XRwsOBfu71v9h0Pg+XwiLRnVAyJtR/d0ex6jUdmgWdWzzJojY1qq/cTaZYGVXS1LataIPJe3sl7TNXS4sGNTaendGkiOQOTEeTh06GJzOmHXos33ZQ2WsFovXU8cCEojZ9hlyeSCyFHna8BS8eFqhOMaPNj7WTbCemyjSqMmbtgwlrtNL7Elb9Gt2w5vQJVq8r3HUNivsZ4OFMvSOy9ylUhZFOCFSF2Pik+ECH3gtdzL6UXOh7cQ93YvCFDhASbl8+9NXut8Ze3Pyll8vfyeKKadlcEhaA8g0aLE+zqD9FR3nCflCcFaeQZr0CepvPW10s+ImlM+XhzlkRiodbFOV7w2R+ONynB8ic2RAffQkcMTd6W+9Dx6HNWdD6n1QmaAOb5RnBeEM754sVHfGglephBl53NLyOXimMrPoWF8UKRENDj1C8k4W7rpGF5jZn9zOgLi/f9wCGOaSeb7vIdfHZmg83+K92H5BCR7DApICaw33PVVpXlBx+dU64G/3u184tE19/y8FEZx2f7+uWbEuTqK+zpJ4zxPrp2noBeJFAqNDlqL77WZFJKZbm8FkcMEctVRYl+G0S58WqAELeRSSGIbLQ6voqSqq1j/vWz1rrNaQX/xx/lgyO9zuSolzorPD7fvk+zTif7E25Ev6vtrT79oorEVH2ArKqrz7BNzO/2uHvalWWTlw9psjmMVrb1a9fuNo+bC6wjXdf1J/ekv7jNASiWHwea8yYYbQGYOgKb0vBmRAisle7o+2dDT2CpwtWDW1ohFBwrnqQZWoyrbCX59x2XuPZtIuynOpAJg7TS+BXk//zU0GrplGngT1abd+yduKBX5q4Z+EjOIq0nHqDR35jZ2w==',
-      vc: '55407ec7fc281d285cad1a4cc15953aa',
-      captcha_vc:'e689c548c322a7e3a1fd60ac2ca37ee0',
-      captcha_answer:'AqAdMLPwpcUg-14-710a4ddb5cb29ba6',
-      cf_ch_verify:'plat',
-      cf_ch_cp_return:'e7d224f0fadd3fa644eb99798ea2d538|{"managed_clearance":"ni"}',
-      h_captcha_response:'captchka',
-    };
+    document.cookie="cf_chl_rc_m=2; CultureInfo=en-US; ASP.NET_SessionId=uhmb3riufc4l3t1w0bydsxr1; _ga=GA1.1.350648804.1653445057; bitmedia_fid=eyJmaWQiOiJkOWQ4ZDBiYjg2ODhiOGE5YmFjZTAyMGQwNjM2YmM5YSIsImZpZG5vdWEiOiIxYTE2MWRmNmNjNGMwMTY1ZDVlYTgyN2NiYjI5NzYzMSJ9; __cf_bm=SwwZ0D.38Odaooel9kJUBccvnFIAXdMiQOkefdz131Y-1653445060-0-Ae2H9OVhic/3aFMLfljZRVBvrbw7qXGvGgdGDofmEWmV339g+/NNxI1jTV9DmIyBfB0uIu/B5kLn6w+gJ/hJ7l0pn+9GrU94EyvXyts2I+XxL937d4/7S4Pixfcz28BwSg==; _immortal|Arc_nodeId=KrZWegsAyt2GiLT5GmuYSg; widgetOptState={%22state%22:%22UNDECIDED%22%2C%22date%22:%222022-05-25T02:17:40.093Z%22%2C%22dismissedAt%22:null}; cf_chl_2=46314932f7dca17; cf_chl_prog=x14; _ga_F6PHP71XCT=GS1.1.1653445057.1.1.1653445781.0; cf_clearance=u6lQBEXbUPf.2UiResl6P7uwKV_LK3gx8O.xDvmm6ac-1653445794-0-150"
     
    $.ajax({
     url: "https://ad-doge.com/user/earn/surf.aspx?ref=176478",
-     data: formData,
-     type: "POST",
+     type: "GET",
      success: function(data1){
       $('#content').html(data1);
     }
