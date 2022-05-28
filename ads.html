@@ -1,19 +1,25 @@
 <html>
 <body>
-<iframe width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?origin=google.com"></iframe>
-  <script>
-   function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-   }
-   async function Tutor() {
+<iframe id="myFrame" width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?origin=google.com"></iframe>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+       $(document).ready(function() {
+           function sleep(ms) {
+              return new Promise(resolve => setTimeout(resolve, ms));
+           }
+      
+      async function Tutor() {
       for (let i = 1; i <20 ; i++) {        
          await sleep(7000);
-        const collection = document.getElementsByClassName("ytp-large-play-button");
-        collection[0].click();
+       
+            var myFrame = document.getElementById("myFrame");
+            $(myFrame.contentWindow.document).find("button.ytp-large-play-button").click();
+        });
         break;
       }
+        Tutor()
    }
-   Tutor()
-</script>
+        
+    </script>
 </body>
 </html>
