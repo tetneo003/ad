@@ -1,22 +1,8 @@
+<!DOCTYPE html>
 <html>
 <body>
-<iframe id="myFrame" width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?origin=google.com"></iframe>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script>
-      window.onload = function(){
-        function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-      async function Tutor() {
-      	for (let i = 1; i <20 ; i++) {       
-         await sleep(7000);
-            $('iframe').load(function(){
-              $(this).contents().find("button.ytp-large-play-button")[0].click();
-            });
-      	}
-      }
-      Tutor()
-    };
-    </script>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?autoplay=1&origin=google.com&mute=1">
+</iframe>
 </body>
 </html>
+
