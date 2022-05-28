@@ -1,5 +1,24 @@
 <html>
 <body>
-<iframe width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?autoplay=1&origin=google.com&mute=1" allow='autoplay'></iframe>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/_nMYnethYqQ?origin=google.com"></iframe>
+  <script>
+   function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+   async function Tutor() {
+      document.write('Hello Toturix');
+      for (let i = 1; i <20 ; i++) {        
+         await sleep(3000);
+        const collection = document.getElementsByClassName("ytp-play-button");
+        if (typeof collection != "undefined") {
+          collection[0].click();
+          break;
+        } else {
+          await sleep(3000);
+        }
+      }
+   }
+   Tutor()
+</script>
 </body>
 </html>
