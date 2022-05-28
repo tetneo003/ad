@@ -11,7 +11,7 @@
       	for (let i = 1; i <20 ; i++) {       
          await sleep(7000);
             $('iframe').load(function(){
-              $(this).contents().find("body").click();
+              $(this).contents().find("button.ytp-large-play-button")[0].click();
             });
       	}
       }
